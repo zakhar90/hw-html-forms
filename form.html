@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Форма соціологічного опитування</title>
+        <link rel="icon" href="images/form-icon.png" type="images/png">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><strong>Головна</strong></a>
+            <a href="table.html"><strong>Таблиця</strong></a>
+        </nav>
+        <hr>
+        <form method="POST" action="https://formspree.io/zakhar90@gmail.com">
+            <fieldset>
+                <label>
+                    Вкажіть вашу стать:<br>
+                    
+                    <input type="radio" name="sex" value = "man"> Ч
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="sex" value = "woman"> Ж
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="age">Вкажіть ваш вік:</label>
+                <br>
+                <input type="text" name="age" id="age">
+                <br>
+                <label>
+                    На якій спеціальності навчаєтеся?<br>
+                    <input type="text" name="special">
+                </label>
+                <br>
+                <label>
+                    На якому курсі Ви зараз?<br>
+                    <input type="text" name="course">
+                </label>
+                <br>
+                <label>
+                    Вкажіть місто, в якому розташований університет<br>
+                    <input type="text" name="located">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    Зазначте форму навчання<br>
+                    <input type="radio" name="specify" value = "full-time"> Денна
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="specify" value = "external"> Заочна
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                    Хто оплачує Ваше навчання?
+                    <br>
+                <label>
+                    сам (а)
+                    <input type="checkbox" name="itself">
+                </label>
+                
+                <label>
+                    батьки
+                    <input type="checkbox" name="parents">
+                </label>
+                <label>
+                    організація
+                    <input type="checkbox" name="organization">
+                </label>
+                <label>
+                    держбюджет
+                    <input type="checkbox" name="state-budget">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    Де ви проживаєте?<br>
+                    <input type = "radio" name = "live" value = "regional-center">  Обласний центр
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "live" value = "town"> Районний центр, місто
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "live" value = "village"> Село, селище
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                    Якими чинниками Ви керувалися при виборі спеціальності?
+                    <br>
+                <label>
+                    моїми схильностями до даного виду професійної діяльності
+                    <input type="checkbox" name="inclinations">
+                </label>
+                <br>
+                <label>
+                    близькістю до дому
+                    <input type="checkbox" name="proximity">
+                </label>
+                <br>
+                <label>
+                    відомістю/престижністю вузу
+                    <input type="checkbox" name="prestige">
+                </label>
+                <br>
+                <label>
+                    кількістю бюджетних місць
+                    <input type="checkbox" name="budget">
+                </label>
+                <br>
+                <label>
+                    вартістю навчання
+                    <input type="checkbox" name="cost">
+                </label>
+                <br>
+                <label>
+                    кількість вакансій на ринку праці
+                    <input type="checkbox" name="vacancies">
+                </label>
+                <br>
+                <label>
+                    рекомендаціями друзів/знайомих
+                    <input type="checkbox" name="recommendations">
+                </label>
+                <br>
+                <label>
+                    престижністю професії і рівнем майбутньої зарплати
+                    <input type="checkbox" name="level">
+                </label>
+                <br>
+                <label>
+                    рекомендаціями батьків
+                    <input type="checkbox" name="parents">
+                </label>
+                <br>
+                <label>
+                    важко відповісти, я глибоко над цим не задумувався(лась) у той час, все вийшло спонтанно
+                    <input type="checkbox" name="spontaneously">
+                </label>
+                <br>
+                <label>
+                    простотою вступу
+                    <input type="checkbox" name="ease">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    Чи знали Ви на момент вступу, ким можна працювати після закінчення навчання?<br>
+                    <input type = "radio" name = "who-can-work" value = "yes"> так
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "who-can-work" value = "no"> ні
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "who-can-work" value = "thought"> думав, що так, а виявилося інше
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                 Оцініть, наскільки вагомим був вплив батьків на вибір майбутньої професії? (виберіть один варіант відповіді)
+                    <br>
+                <label>
+                    Я самостійно вибирав(ла) професію
+                    <input type="checkbox" name="myself">
+                </label>
+                <br>
+                <label>
+                    Батьки пояснювали переваги/недоліки цієї та інших професій, але остаточне рішення було за мною
+                    <input type="checkbox" name="explained">
+                </label>
+                <br>
+                <label>
+                    Батьки керувалися вибором університету, а я самостійно обирав(ла) спеціальність
+                    <input type="checkbox" name="choice">
+                </label>
+                <br>
+                <label>
+                    Я самостійно вибирав спеціальність, а батьки радили університет
+                    <input type="checkbox" name="chose ">
+                </label>
+                <br>
+                <label>
+                   Батьки визначили університет і спеціальність
+                    <input type="checkbox" name="determined">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    Чи уявляли Ви на момент вступу, у чому полягає робота фахівця (посадові обов’язки), що працює за обраною Вами спеціальністю? <br>
+                    <input type = "radio" name = "specialist" value = "yes"> так
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "specialist" value = "no"> ні
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "specialist" value = "thought"> думав, що так, а виявилося інше
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    Чи знаєте Ви, на які посади можете претендувати після завершення університету?<br>
+                    <input type = "radio" name = "posts" value = "yes"> так
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "posts" value = "no"> ні
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "posts" value = "imagine"> приблизно уявляю
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    Чи знаєте ви основні вимоги роботодавців щодо кандидата на одну з посад відповідно до обраної Вами спеціальності?<br>
+                    <input type = "radio" name = "requirements" value = "yes"> так
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "requirements" value = "no"> ні
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "requirements" value = "imagine"> приблизно уявляю
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "requirements" value = "interested"> буду цікавитися після отримання диплому
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    Чи задоволені ви обраною вами спеціальністю?<br>
+                    <input type = "radio" name = "satisfied" value = "yes"> так
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "satisfied" value = "no"> ні
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "satisfied" value = "notexactly"> не зовсім те, що очікувалося
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "satisfied" value = "difficult"> важко відповісти
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    Якби зараз Вам дали можливість змінити обрану спеціальність, то чи обрали б ви іншу?<br>
+                    <input type = "radio" name = "change" value = "yes"> так
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "change" value = "no"> ні
+                </label>
+                <br>
+                <label>
+                    <input type = "radio" name = "change" value = "difficult"> важко відповісти
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="your-name">Ваше ім'я</label>
+                    <br>
+                    <input type="text" name="client-name" id="your-name"
+                required>
+                <br>
+                <label for="your-surname">Ваше прізвище</label>
+                    <br>
+                    <input type="text" name="client-name" id="your-surname"
+                required>
+                <br>
+                <label>Ваш e-mail
+                    <br>
+                    <input type="email" name="your-email" required>
+                </label>
+            </fieldset>
+            <br>
+            <input type="submit" name = "submit" value="Надіслати"/>
+            <input type = "reset" name = "reset"  value = "Скинути" />
+        </form>
+        <hr>
+        <footer>
+            <p>&copy; 2017 Захарій Павлюк</p>
+        </footer>
+    </body>
+</html>
